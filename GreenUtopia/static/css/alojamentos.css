@@ -1,0 +1,150 @@
+
+/*** Botão página inicial para ir para a página de pesquisa de Alojam ***/
+.pesquisaAlojam {
+    background-color: #69C6BA;
+    height: 60px;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+
+/**** Página de pesquisa de alojamentos ***/
+.nameAloj {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	color: black;
+    font-weight: bold;
+    font-size: 20px; 
+    position: relative;
+    left: 22px;
+    top: 10px;
+}
+
+.ratingAloj {
+    position: relative;
+    left: 520px;
+    top: 5px; 
+    border: 10px ;
+    border-radius: 40px;
+    border-color: #f0ec8e;
+    background-color: #f0ec8e;
+    border-style:solid;
+    width: 160px;
+    font-size: 17px;
+    text-indent: 9px;
+} 
+
+.priceAloj {
+    position: relative;
+    left: 522px;
+    top: 70px; 
+    font-size: 18px;
+    text-indent: 40px;
+    font-weight: normal;
+    border:1px;
+    border-color: rgb(176, 175, 175);
+    border-style:solid;
+    width: 160px;
+    height: 57px;
+}
+
+.imagesAloj {
+    position: relative;
+    left: 5px;
+    top: -85px;
+}
+
+.moreInfo {
+    position: relative;
+    right: -475px;
+    top: -125px;
+    height: 40px;
+    width: 210px;
+    background-color: #69C6BA ;
+    border: 0;
+    font-size: 16px;
+}
+
+.showAll {
+    position: relative;
+    height: 40px;
+    width: 300px;
+    top: 30px;
+    left: 265px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.showType {
+    position: relative;
+    height: 40px;
+    width: 270px;
+    top: -2800px;
+    left: 26px;
+    background-color: #69C6BA;
+    border: 1px solid #747777;  
+    text-align: center;
+}
+
+
+/**** +Informação pagamento ***/
+
+.clients_section{
+    position: relative;
+    left: 50px;
+    width: 90%;
+
+}
+
+.carousel-indicators .active { 
+    background-color: #c66995;
+}
+.carousel-indicators li {
+    position: relative;
+    left: -10px;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 40px;
+    height: 6px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    background-color: #69c6ba;
+}
+
+.carousel {
+    position: relative;
+    padding-bottom: 60px;
+}  
+
+.buttonReserva {
+    position: relative;
+    border: 10px;
+    border-style:solid;
+    background-color: #69C6BA;
+    border-color: #69C6BA;
+    color: white;
+    font-weight: bold;
+    padding: 5px 50px; 
+}
+
+
+/******* pagamentoAloj.html *******/
+
+.pagamentoFORM {
+    position: relative;
+    left: 600px;
+    top: 20px;
+    border: 3px;
+    border-style: solid;
+    border-color: #a6acac;
+    height: 300px;
+    width: 740px;
+}
+
+
+
+
+

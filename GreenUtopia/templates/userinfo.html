@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+
+{% include 'nav.html' %}
+
+
+<div class="container">
+    <div class="container my-3 py-3 bg-white">
+        <h1 class="pl-5 py-2">Conta de Utilizador</h1>
+        <div class="row px-5 pt-2 pb-4">
+            <div class="col-sm-3">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/1024px-User-avatar.svg.png" style="width: 100%;box-shadow: 0px 0px 10px 1px #333;">
+                <button class="button btn mt-3 w-100" style="background-color:#3a3;color:white;cursor: pointer;font-size: 130%;">Editar Perfil</button>
+                <a class="button btn mb-3 mt-2 w-100" style="background-color:#c33;color:white;cursor: pointer;font-size: 130%;" href="logout">Logout</a>
+            </div>
+            <div class="col-sm-9" style="display: flex;">
+                <div class="container" style="width: 35%;text-align: right;">
+                    <div class="" style="width:100%;height:40px;line-height: 40px;font-size:130%;font-weight: 700;">Nome de utilizador:</div>
+                    <div class="" style="width:100%;height:40px;line-height: 40px;font-size:130%;font-weight: 700;margin-top:10px;">Endereço de Email:</div>
+                    <div class="" style="width:100%;height:40px;line-height: 40px;font-size:130%;font-weight: 700;margin-top:10px;">Número de telefone:</div>
+                    <div class="" style="width:100%;height:40px;line-height: 40px;font-size:130%;font-weight: 700;margin-top:27px;">Password:</div>
+                </div>
+                <div class="container" style="width: 65%;">
+                    <input class="input" style="width:100%;height:40px;" value={{ user[0] }} disabled>
+                    <input class="input" style="width:100%;height:40px;margin-top: 10px;" value={{ user[1] }} disabled>
+                    <input class="input" style="width:100%;height:40px;margin-top: 10px;" value={{ user[2]  }} disabled><a style="color:#c33">Nota: Este campo não é obrigatório</a></input>
+                    <input type="password" class="input" style="width:100%;height:40px;margin-top: 10px;" value="12345678" disabled>
+                </div>
+                
+            </div>
+        </div>
+
+        <h1 class="pl-5"><a style="padding-right:15px;color:#3a3">&#9733;</a>Alojamentos Favoritos</h1>
+
+        <div class="container py-3 px-5 mt-3">
+            <div class="mb-5" style="height:300px;display: flex;position: relative;box-shadow: 0px 0px 10px 1px #333;">  
+                <img class="" src="/static/img_db/surfPeniche310x235.jpg">
+                <div class="w-100 p-3" >
+                    <h3 class="">Surf glamping ecológico em Peniche</h3>
+                    <h6 class="">O mote do Bukubaki é “unir a paixão pelo estilo de vida ativo associado ao surf, skate, ciclismo e caminhada, com o desejo de tranquilidade e serenidade, promovendo a consciência pela natureza e o regresso do ser humano ao seu ecossistema natural.” Localizado junto a Peniche, uma das “capitais” do surf em Portugal, é um glamping ecológico que se assume como um local para férias ativas e em família e se baseia nos princípios da sustentabilidade, sem comprometer o conforto dos seus hóspedes. Aqui dá para reservar aulas de surf, yoga e skate.</h6>
+
+                    <button class="button btn" style="position: absolute;bottom: 10px;right:10px;background-color: #3a3;height: 40px;width: 210px;border: 0;"><a href="/moreInfo/1" style="font-size:120%;color:white;">+ Informação</a></button> 
+                </div>
+            </div> 
+            <div class="mb-5" style="height:300px;display: flex;position: relative;box-shadow: 0px 0px 10px 1px #333;">  
+                <img class="" src="/static/img_db/parqNaturalMatosinhos310x235.jpg">
+                <div class="w-100 p-3" >
+                    <h3 class="">Turismo de natureza no Parque Natural de Montesinho</h3>
+                    <h6 class="">No nordeste transmontano, espalhado por três hectares no coração do Parque Natural de Montesinho, o Cepo Verde é um turismo de natureza ecológico e barato, com opções para todos os gostos. Está certificado pelo Instituto de Conservação da Natureza e Floresta e tem o selo internacional de qualidade ambiental da GreenKey.</h6>
+                    <button class="button btn" style="position: absolute;bottom: 10px;right:10px;background-color: #3a3;height: 40px;width: 210px;border: 0;"><a href="/moreInfo/2" style="font-size:120%;color:white;">+ Informação</a></button> 
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
