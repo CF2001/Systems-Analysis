@@ -15,3 +15,5 @@ python greenUapp.py
 <br>
 
 Project developed with [Eduardo Fernandes](https://github.com/EduardoFernandesUA), [Sara Costa](https://github.com/saracarolina80) and [Ana Conceição](https://github.com/AnaConceicao26).
+
+#### Grade: 15/20
